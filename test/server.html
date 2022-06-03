@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>test video</title>
-    <meta
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-      name="viewport"
-    />
-    <meta charset="utf-8" />
-  </head>
-  <body>
-    <audio src="youtube.com/watch?v=s-mOy8VUEBk" autoplay controls preload="metadata">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="theme-color" content="#000000">
+  <meta http-equiv="pragma" content="no-cache">
+  <title>Audio Stream | www.minhtamgroup.org</title>
+  <link rel='shortcut icon' type='image/x-icon'
+    href="https://cdn1.minhtamgroup.org/icons/minhtam_1000x1000_white.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+  <link href="https://cdn1.minhtamgroup.org/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn1.minhtamgroup.org/css/normalize.min.css">
+  <link rel='stylesheet' href='https://cdn1.minhtamgroup.org/css/plyr.css'>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    @font-face {
+      font-family: segoeui;
+      src: url(https://cdn1.minhtamgroup.org/fonts/SEGOEUI.TTF);
+    }
+
+    * {
+      font-family: segoeui;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="./script.js"></script>
+
+  <center>
+    <br><br>
+    <b>Youtube URL: </b><input type="text" id="url" name="url" style="width: 69%;">
+    <br><br>
+    <button id="playBtn" onclick="javascript:play()"><b>PLAY</b></button>
+    <br><br>
+    <audio id="audio" src="" autoplay controls preload="metadata">
     </audio>
-  </body>
+  </center>
+</body>
+
 </html>
