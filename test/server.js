@@ -7,9 +7,10 @@ const path = require('path')
 
 http.createServer(demo).listen(3000)
 
-function demo (req, res) {
+function demo(req, res) {
   if (req.url === '/') {
-    return fs.createReadStream(path.join(__dirname, '/server.html')).pipe(res)
+    return res.write(path.join(__dirname, '/server.html'));
+    // return fs.createReadStream(path.join(__dirname, '/server.html')).pipe(res)
   } else if (req.url === '/ping') {
     res.end('pong')
   } else if (/youtube/.test(req.url)) {
